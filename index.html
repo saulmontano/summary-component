@@ -2,39 +2,90 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summary-Component</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;300;600;900&family=Hanken+Grotesk:wght@500;700;800&family=Lora:ital@1&family=Montserrat&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summary-Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;300;600;900&family=Hanken+Grotesk:wght@500;700;800&family=Lora:ital@1&family=Montserrat&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="sass/style.css">
 
 </head>
 
 <body>
-    <main class="card-group">
-        <div class="card">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-          <div class="card-body">
-            <h5 class="card-title">Título de la tarjeta </h5>
-            <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción natural a contenido adicional.  Este contenido es un poco más largo. </p>
-            <p class="card-text"><small class="text-body-secondary">Última actualización hace 3 minutos </small></p>
+  <main class="container d-flex align-items-center justify-content-center vh-100">
+    <div class="row">
+      <!-- columna izquierda-->
+      <div class="col-12 col-lg-6 p-0  shadow-lg" style="max-width: 450px; height: 510px;">
+        <article class="card h-100 text-white back">
+          <div class="card-body text-center">
+            <h2 class="m-4 h4">Your Result</h2>
+            <div class="d-flex justify-content-center align-items-center rounded-circle back2 mx-auto m-4"
+              style="width: 200px; height: 200px">
+              <p class="text-center texto-personalizado">
+                <span class="d-block m-0 p-0">76</span>
+                <span class="h4 d-block m-0 p-0">of 100</span>
+              </p>
+            </div>
+            <div class="footer">
+              <h1 class="font-weight-bold h2 m-5 mb-1 p-2">Great</h1>
+              <p class="h5 mx-3">You scored higher than 65% of the people who have takan these tests.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+        </article>
+      </div>
+      <!-- columna derecha -->
+      <div class="col-12 col-lg-6 p-0 shadow-sm border-0 "style="max-width: 450px; height: 510px;">
+        <article class="card h-100 ">
           <div class="card-body">
-            <h5 class="card-title">Título de la tarjeta </h5>
-            <p class="card-text">Esta tarjeta tiene texto de apoyo a continuación como una introducción natural a contenido adicional. </p>
-            <p class="card-text"><small class="text-body-secondary">Última actualización hace 3 minutos </small></p>
+            <div class="m-3">
+              <h1 class="text-justify h3"> Summary</h1>
+            </div>
+            <ul class="list-group m-3 ">
+
+              <li class="list-group-item  d-flex justify-content-between align-items-center text-success p-2 m-2 rounded" style="background-color: rgba(255, 87, 87, .1);">
+                <div class="d-flex align-items-center">
+                  <img src="images/icon-reaction.svg" alt="Icono" class="mr-2">
+                  <span class="p-1">Reaction</span>
+                </div>
+                <span class="h6 text-black "> 80<span class="text-warning">/100</span></span>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between align-items-center text-dark p-2 m-2 rounded" style="background-color: rgba(255, 176, 31, .1);">
+                <div class="d-flex align-items-center">
+                  <img src="images/icon-memory.svg" alt="Icono" class="mr-2">
+                  <span class="p-1">Memory</span>
+                </div>
+                <span class="h6 text-black ">92<span class="text-warning">/100</span></span>
+              </li>
+
+              <li class="backV list-group-item d-flex justify-content-between align-items-center text-secondary p-2 m-2 rounded" style="background-color: rgba(0, 189, 145, .1)">
+                <div class="d-flex align-items-center ">
+                  <img src="images/icon-verbal.svg" alt="Icono">
+                  <span class="p-1">Verbal</span>
+                </div>
+                <span class="h6 text-black ">61<span class="text-warning">/100</span></span>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between align-items-center text-primary p-2 m-2 rounded" style="background-color: rgba(17, 37, 212, .1);">
+                <div class="d-flex align-items-center">
+                  <img src="images/icon-visual.svg" alt="Icono" class="mr-2">
+                  <span class="p-1">Visual</span>
+                </div>
+                <span class="h6 text-black ">72<span class="text-warning">/100</span></span>
+              </li>
+
+              <button type="button" class="btn btn-danger btn-lg btn-block border-0 p-2 my-5" style="border-radius: 50px;">Continue</button>
+            </ul>
           </div>
-        </div>
-    </main>
-      
+        </article>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
